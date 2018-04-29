@@ -19,8 +19,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="234">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="34" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -98,7 +98,7 @@
       <path value="$PROJECT_DIR$/Python/static/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -312,8 +312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="234">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="34" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>

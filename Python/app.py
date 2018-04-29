@@ -44,15 +44,15 @@ def signup():
 
     cursor = conn.cursor()
 
-    cursor.callproc('sp_createUser',(_name,_email,_hashed_password, _teamname))
+    cursor.callproc('sp_createUser', (_name, _email, _hashed_password, _teamname))
 
-    data = cursor.fetchall()
+    #data = cursor.fetchall()
 
-    if len(data) is 0:
-        conn.commit()
-        return json.dumps({'message': 'User created successfully !'})
-    else:
-        return json.dumps({'error': str(data[0])})
+    #if len(data) is 0:
+    #    conn.commit()
+    #    return json.dumps({'message': 'User created successfully !'})
+    #else:
+    #    return json.dumps({'error': str(data[0])})
 
 
 if __name__ == '__main__':
