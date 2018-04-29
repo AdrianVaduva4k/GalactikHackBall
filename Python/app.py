@@ -11,8 +11,6 @@ app.config['MYSQL_DATABASE_PASSWORD'] = 'a8l8e8x8'
 app.config['MYSQL_DATABASE_DB'] = 'Galactikhackball'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 
-conn = None
-
 
 @app.route('/')
 def main():
@@ -22,7 +20,7 @@ def main():
 @app.route('/signUp', methods=['POST'])
 def signup():
 
-    global conn
+    global mysql
     # read the posted values from the UI
     _name = request.form['name']
     _email = request.form['email']
@@ -32,6 +30,8 @@ def signup():
     _hashed_password = generate_password_hash(_password)
 
     # MySQL configurations
+
+    conn = mysql.connect()
 
     cursor = conn.cursor()
 
@@ -49,4 +49,4 @@ def signup():
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
     mysql.init_app(app)
-    conn = mysql.connect()
+
