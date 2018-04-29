@@ -1,0 +1,12 @@
+{
+    "name": "voidboy/scripts",
+    "authors": [
+        {
+            "name": "Adrian-Ionut Vaduva",
+            "email": "adrian-ionut.vaduva@student.manchester.ac.uk"
+        }
+    ],
+    "require": {
+        "joshcam/mysqli-database-class": "dev-master"
+    }
+}
