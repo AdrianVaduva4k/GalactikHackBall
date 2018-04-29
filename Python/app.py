@@ -6,6 +6,16 @@ app = Flask(__name__)
 
 mysql = MySQL()
 
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'a8l8e8x8'
+app.config['MYSQL_DATABASE_DB'] = 'Galactikhackball'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+
+mysql.init_app(app)
+
+conn = mysql.connect()
+
+
 @app.route('/')
 def main():
     return render_template('index.html')
@@ -23,13 +33,6 @@ def signup():
     _hashed_password = generate_password_hash(_password)
 
     # MySQL configurations
-    app.config['MYSQL_DATABASE_USER'] = 'root'
-    app.config['MYSQL_DATABASE_PASSWORD'] = 'a8l8e8x8'
-    app.config['MYSQL_DATABASE_DB'] = 'Galactikhackball'
-    app.config['MYSQL_DATABASE_HOST'] = 'localhost'
-    mysql.init_app(app)
-
-    conn = mysql.connect()
 
     cursor = conn.cursor()
 
@@ -43,5 +46,6 @@ def signup():
     else:
         return json.dumps({'error': str(data[0])})
 
+
 if __name__ == '__main__':
-    app.run(host= '0.0.0.0')
+    app.run(host='0.0.0.0')
