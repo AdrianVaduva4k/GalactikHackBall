@@ -14,10 +14,10 @@ app.config['MYSQL_PORT'] = '3306'
 app.config['MYSQL_UNIX_SOCKET'] = '/var/lib/mysql/mysql.sock'
 app.config['MYSQL_CONNECT_TIMEOUT'] = 10
 app.config['MYSQL_USE_UNICODE'] = False
-app.config['MYSQL_SQL_MODE'] = ''
-app.config['MYSQL_READ_DEFAULT_FILE	'] = ''
-app.config['MYSQL_CHARSET'] = ''
-app.config['MYSQL_CURSORCLASS'] = ''
+app.config['MYSQL_SQL_MODE'] = 'modes'
+app.config['MYSQL_READ_DEFAULT_FILE	'] = '/etc/my.cnf'
+app.config['MYSQL_CHARSET'] = 'utf8'
+app.config['MYSQL_CURSORCLASS'] = 'BaseCursor'
 
 
 
