@@ -40,7 +40,7 @@ def signup():
 
     # MySQL configurations
 
-    conn = mysql.connect()
+    conn = mysql.connect
 
     cursor = conn.cursor()
 
