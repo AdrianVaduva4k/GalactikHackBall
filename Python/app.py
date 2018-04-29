@@ -10,6 +10,7 @@ app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'a8l8e8x8'
 app.config['MYSQL_DATABASE_DB'] = 'Galactikhackball'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = 'localhost'
 
 
 @app.route('/')
