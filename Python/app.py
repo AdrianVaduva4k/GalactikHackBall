@@ -12,7 +12,7 @@ app.config['MYSQL_DB'] = 'Galactikhackball'
 app.config['MYSQL_HOST'] = '127.0.0.1'
 app.config['MYSQL_PORT'] = '3306'
 app.config['MYSQL_UNIX_SOCKET'] = '/var/lib/mysql/mysql.sock'
-app.config['MYSQL_CONNECTION_TIMEOUT'] = '1000'
+app.config['MYSQL_CONNECT_TIMEOUT'] = '1000'
 
 
 @app.route('/')
